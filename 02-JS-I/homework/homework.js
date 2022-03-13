@@ -197,8 +197,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  nombre = "Miguel";
-  apellido = "Hernandez"; 
+ 
   var combinados = nombre + " " + apellido;
   return combinados;
 }
@@ -251,17 +250,15 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    if (letra.length > 1){
-      return "Dato Incorrecto";
-    }
-      if(letra === "a"|| letra === "e"||letra === "i"||letra === "o"||letra === "u") {
-        return "Es Vocal";
-        }  else {
-          return "Dato Incorrecto"; 
-      }
+
+  if(letra.length > 1){
+    return "Dato incorrecto";
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal";
+  }
+  return "Dato incorrecto";
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
